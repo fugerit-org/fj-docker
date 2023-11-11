@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.fugerit.java.docker</groupId>
+	<artifactId>fj-docker</artifactId>
+
+	<version>1.4.7</version>
+	<packaging>pom</packaging>
+
+	<name>Fugerit Docker build file library</name>
+	<description>A collection of my personal docker build files</description>
+	<url>https://www.fugerit.org/</url>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<organization>
+		<url>https://www.fugerit.org</url>
+		<name>Fugerit</name>
+	</organization>
+
+	<developers>
+		<developer>
+			<name>Matteo Franci a.k.a. Fugerit</name>
+			<email>m@fugerit.org</email>
+			<url>https://www.fugerit.org</url>
+			<timezone>+1</timezone>
+			<organization>Fugerit</organization>
+			<organizationUrl>https://www.fugerit.org</organizationUrl>
+			<roles>
+				<role>IT Senior Consultant</role>
+				<role>Senior Software Architect</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/fugerit-org/fj-docker.git</connection>
+		<developerConnection>scm:git:ssh://github.com/fugerit-org/fj-docker.git</developerConnection>
+		<url>https://github.com/fugerit-org/fj-docker.git</url>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/fugerit-org/fj-docker/issues</url>
+	</issueManagement>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java-version-compliance>1.8</java-version-compliance>
+		<maven.compiler.source>${java-version-compliance}</maven.compiler.source>
+		<maven.compiler.target>${java-version-compliance}</maven.compiler.target>
+	</properties>
+	
+</project>
