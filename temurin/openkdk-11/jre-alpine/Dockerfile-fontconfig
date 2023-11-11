@@ -1,0 +1,12 @@
+FROM eclipse-temurin:11.0.21_9-jre-alpine
+
+LABEL org.opencontainers.image.authors="Fugerit" \
+      org.opencontainers.image.revision="11.0.21_9-jre-alpine-fontconfig"
+
+USER root
+
+RUN apk add fontconfig
+
+ENV OSFONTDIR=/usr/share/fonts
+RUN chmod -R o+w /usr/share/fonts\
+  && fc-cache --really-force --verbose
